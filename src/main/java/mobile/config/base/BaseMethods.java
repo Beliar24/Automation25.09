@@ -3,7 +3,9 @@ package mobile.config.base;
 import com.google.common.collect.ImmutableList;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Pause;
 import org.openqa.selenium.interactions.PointerInput;
@@ -159,7 +161,7 @@ public class BaseMethods extends Waiters {
     protected void getPhotoFromArticle(By by) {
         WebElement element = middle(by, true);
 
-        byte[] imageBytes = element.getScreenshotAs(OutputType.BYTES);
+        byte[] imageBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 
         try {
             BufferedImage image = ImageIO.read(new ByteArrayInputStream(imageBytes));

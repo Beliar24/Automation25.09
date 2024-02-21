@@ -22,7 +22,6 @@ public class ArticlePage extends BaseMethods {
     }
 
     public void downloadPicture() {
-        click(title);
         getPhotoFromArticle(photo);
     }
 }

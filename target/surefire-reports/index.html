@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Auto" class="navigator-link">
-              <span class="suite-name border-skipped">Auto</span>
+              <span class="suite-name border-failed">Auto</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Auto" class="navigator-link ">
-                    <span>D:\Project\AutoTest\src\testng.xml</span>
+                    <span>D:\Project\Automation25.09\src\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,26 +92,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Auto" class="hide-methods skipped suite-Auto"> (hide)</a> <!-- hide-methods skipped suite-Auto -->
-                      <a href="#" panel-name="suite-Auto" class="show-methods skipped suite-Auto"> (show)</a> <!-- show-methods skipped suite-Auto -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Auto" class="hide-methods failed suite-Auto"> (hide)</a> <!-- hide-methods failed suite-Auto -->
+                      <a href="#" panel-name="suite-Auto" class="show-methods failed suite-Auto"> (show)</a> <!-- show-methods failed suite-Auto -->
                     </span>
-                    <div class="method-list-content skipped suite-Auto">
+                    <div class="method-list-content failed suite-Auto">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Auto" title="ui.selenide.WikiTest" class="method navigator-link" hash-for-method="shouldBeAuth">shouldBeAuth</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Auto" title="mobile.search.DownLoadTest" class="method navigator-link" hash-for-method="downloadScreenshot">downloadScreenshot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Auto -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Auto" class="hide-methods passed suite-Auto"> (hide)</a> <!-- hide-methods passed suite-Auto -->
+                      <a href="#" panel-name="suite-Auto" class="show-methods passed suite-Auto"> (show)</a> <!-- show-methods passed suite-Auto -->
+                    </span>
+                    <div class="method-list-content passed suite-Auto">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Auto" title="mobile.search.SearchTest" class="method navigator-link" hash-for-method="shouldBeArticleNameVisible">shouldBeArticleNameVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Auto" title="ui.selenide.WikiTest" class="method navigator-link" hash-for-method="shouldBeOpenedArticle">shouldBeOpenedArticle</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Auto" title="mobile.search.SwipeTest" class="method navigator-link" hash-for-method="shouldBeSwipeUp">shouldBeSwipeUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Auto -->
+                    </div> <!-- method-list-content passed suite-Auto -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,101 +137,80 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Auto" class="panel Auto">
-          <div class="suite-Auto-class-skipped">
+          <div class="suite-Auto-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">ui.selenide.WikiTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">mobile.search.DownLoadTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="shouldBeAuth">
-                  </a> <!-- shouldBeAuth -->
-                  <span class="method-name">shouldBeAuth</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/net/HostIdentifier
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:50)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
-	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
-	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:213)
-	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:71)
-	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
-	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:69)
-	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:32)
-	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:92)
-	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
-	at ui.selenide.BaseTest.setUp(BaseTest.java:15)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.HostIdentifier
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 38 more
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="shouldBeOpenedArticle">
-                  </a> <!-- shouldBeOpenedArticle -->
-                  <span class="method-name">shouldBeOpenedArticle</span>
-                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/net/HostIdentifier
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:50)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
-	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
-	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:213)
-	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:71)
-	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
-	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:69)
-	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:32)
-	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:92)
-	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
-	at ui.selenide.BaseTest.setUp(BaseTest.java:15)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.HostIdentifier
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 38 more
-... Removed 16 stack frames
+                  <a name="downloadScreenshot">
+                  </a> <!-- downloadScreenshot -->
+                  <span class="method-name">downloadScreenshot</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal base64 character a
+	at java.base/java.util.Base64$Decoder.decode0(Base64.java:848)
+	at java.base/java.util.Base64$Decoder.decode(Base64.java:566)
+	at java.base/java.util.Base64$Decoder.decode(Base64.java:589)
+	at org.openqa.selenium.OutputType$2.convertFromBase64Png(OutputType.java:56)
+	at org.openqa.selenium.OutputType$2.convertFromBase64Png(OutputType.java:53)
+	at org.openqa.selenium.remote.RemoteWebElement.getScreenshotAs(RemoteWebElement.java:364)
+	at mobile.config.base.BaseMethods.getPhotoFromArticle(BaseMethods.java:162)
+	at mobile.po.ArticlePage.downloadPicture(ArticlePage.java:26)
+	at mobile.services.ArticleService.clickArticleAndSaveImage(ArticleService.java:19)
+	at mobile.search.DownLoadTest.downloadScreenshot(DownLoadTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Auto-class-skipped -->
+          </div> <!-- suite-Auto-class-failed -->
+          <div class="suite-Auto-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mobile.search.SwipeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldBeSwipeUp">
+                  </a> <!-- shouldBeSwipeUp -->
+                  <span class="method-name">shouldBeSwipeUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Auto-class-passed -->
+          <div class="suite-Auto-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mobile.search.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="shouldBeArticleNameVisible">
+                  </a> <!-- shouldBeArticleNameVisible -->
+                  <span class="method-name">shouldBeArticleNameVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Auto-class-passed -->
         </div> <!-- panel Auto -->
         <div panel-name="test-xml-Auto" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Project\AutoTest\src\testng.xml</span>
+            <span class="header-content">D:\Project\Automation25.09\src\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Auto&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Package1&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Auto&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Package1&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ui.selenide.WikiTest&quot;/&gt;
+      &lt;class name=&quot;mobile.search.SearchTest&quot;/&gt;
+      &lt;class name=&quot;mobile.search.DownLoadTest&quot;/&gt;
+      &lt;class name=&quot;mobile.search.SwipeTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Package1 --&gt;
 &lt;/suite&gt; &lt;!-- Auto --&gt;
@@ -231,7 +224,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.HostIdentif
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Package1 (1 class)</span>
+                <span class="test-name">Package1 (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -257,20 +250,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'shouldBeAuth')
-data.setCell(0, 2, 'ui.selenide.WikiTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'shouldBeSwipeUp')
+data.setCell(0, 2, 'mobile.search.SwipeTest')
+data.setCell(0, 3, 15159);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'shouldBeOpenedArticle')
-data.setCell(1, 2, 'ui.selenide.WikiTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'downloadScreenshot')
+data.setCell(1, 2, 'mobile.search.DownLoadTest')
+data.setCell(1, 3, 10721);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'shouldBeArticleNameVisible')
+data.setCell(2, 2, 'mobile.search.SearchTest')
+data.setCell(2, 3, 8557);
 window.suiteTableData['Auto']= { tableData: data, tableDiv: 'times-div-Auto'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Auto">
               </div> <!-- times-div-Auto -->
             </div> <!-- times-div -->
@@ -296,27 +293,51 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ui.selenide.WikiTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
+              <div class="chronological-class-name">mobile.search.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">shouldBeArticleNameVisible</span>
+                <span class="method-start">5635 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">14244 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">mobile.search.DownLoadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">24711 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">downloadScreenshot</span>
+                <span class="method-start">30057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">40783 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">mobile.search.SwipeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-start">51175 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">shouldBeAuth</span>
-                <span class="method-start">204 ms</span>
+                <span class="method-name">shouldBeSwipeUp</span>
+                <span class="method-start">56588 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">shouldBeOpenedArticle</span>
-                <span class="method-start">204 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">71748 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

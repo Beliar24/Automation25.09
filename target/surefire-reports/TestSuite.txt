@@ -1,12 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 1.201 s <<< FAILURE! - in TestSuite
-ui.selenide.WikiTest.setUp  Time elapsed: 1.08 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: org/openqa/selenium/net/HostIdentifier
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.HostIdentifier
-
-ui.selenide.WikiTest.setUp  Time elapsed: 1.08 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: org/openqa/selenium/net/HostIdentifier
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.HostIdentifier
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 82.797 s <<< FAILURE! - in TestSuite
+mobile.search.DownLoadTest.downloadScreenshot  Time elapsed: 10.727 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Illegal base64 character a
+	at mobile.search.DownLoadTest.downloadScreenshot(DownLoadTest.java:17)
 

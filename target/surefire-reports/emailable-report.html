@@ -9,122 +9,24 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Auto</th></tr>
-<tr><td><a href="#t0">Package1</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">255</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Package1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">82 041</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Auto</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Package1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">ui.selenide.WikiTest</td><td><a href="#m0">setUp</a></td><td rowspan="2">1707158584351</td><td rowspan="2">88</td></tr><tr class="failedeven"><td><a href="#m1">setUp</a></td></tr><tr><th colspan="4">Package1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">ui.selenide.WikiTest</td><td><a href="#m2">shouldBeAuth</a></td><td rowspan="1">1707158584555</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">shouldBeOpenedArticle</a></td><td rowspan="1">1707158584555</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Auto</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Package1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">mobile.search.DownLoadTest</td><td><a href="#m0">downloadScreenshot</a></td><td rowspan="1">1708547059034</td><td rowspan="1">10721</td></tr><tr><th colspan="4">Package1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">mobile.search.SearchTest</td><td><a href="#m1">shouldBeArticleNameVisible</a></td><td rowspan="1">1708547034612</td><td rowspan="1">8557</td></tr><tr class="passedodd"><td rowspan="1">mobile.search.SwipeTest</td><td><a href="#m2">shouldBeSwipeUp</a></td><td rowspan="1">1708547085565</td><td rowspan="1">15159</td></tr></tbody>
 </table>
-<h2>Package1</h2><h3 id="m0">ui.selenide.WikiTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/net/HostIdentifier
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:50)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
-	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
-	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:213)
-	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:71)
-	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
-	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:69)
-	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:32)
-	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:92)
-	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
-	at ui.selenide.BaseTest.setUp(BaseTest.java:15)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.HostIdentifier
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 38 more
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ui.selenide.WikiTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/net/HostIdentifier
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:50)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
-	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
-	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:213)
-	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:71)
-	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
-	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:69)
-	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:32)
-	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:92)
-	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
-	at ui.selenide.BaseTest.setUp(BaseTest.java:15)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.HostIdentifier
-	... 38 more
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">ui.selenide.WikiTest#shouldBeAuth</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/net/HostIdentifier
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:50)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
-	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
-	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:213)
-	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:71)
-	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
-	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:69)
-	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:32)
-	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:92)
-	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
-	at ui.selenide.BaseTest.setUp(BaseTest.java:15)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.HostIdentifier
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 38 more
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">ui.selenide.WikiTest#shouldBeOpenedArticle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/openqa/selenium/net/HostIdentifier
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:50)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
-	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
-	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
-	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
-	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
-	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:213)
-	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:71)
-	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
-	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
-	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
-	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:69)
-	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:32)
-	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:92)
-	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
-	at ui.selenide.BaseTest.setUp(BaseTest.java:15)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.HostIdentifier
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 38 more
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Package1</h2><h3 id="m0">mobile.search.DownLoadTest#downloadScreenshot</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Illegal base64 character a
+	at java.base/java.util.Base64$Decoder.decode0(Base64.java:848)
+	at java.base/java.util.Base64$Decoder.decode(Base64.java:566)
+	at java.base/java.util.Base64$Decoder.decode(Base64.java:589)
+	at org.openqa.selenium.OutputType$2.convertFromBase64Png(OutputType.java:56)
+	at org.openqa.selenium.OutputType$2.convertFromBase64Png(OutputType.java:53)
+	at org.openqa.selenium.remote.RemoteWebElement.getScreenshotAs(RemoteWebElement.java:364)
+	at mobile.config.base.BaseMethods.getPhotoFromArticle(BaseMethods.java:162)
+	at mobile.po.ArticlePage.downloadPicture(ArticlePage.java:26)
+	at mobile.services.ArticleService.clickArticleAndSaveImage(ArticleService.java:19)
+	at mobile.search.DownLoadTest.downloadScreenshot(DownLoadTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">mobile.search.SearchTest#shouldBeArticleNameVisible</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">mobile.search.SwipeTest#shouldBeSwipeUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,5 +1,8 @@
-mobile\BasicTest.class
-ui\selenide\WikiTest.class
-api\test\GenerateTokenTest.class
+mobile\search\SwipeTest.class
 ui\selenide\BaseTest.class
 db\DBTest.class
+mobile\search\SearchTest.class
+ui\selenide\WikiTest.class
+mobile\search\DownLoadTest.class
+api\test\GenerateTokenTest.class
+mobile\BaseTest.class
